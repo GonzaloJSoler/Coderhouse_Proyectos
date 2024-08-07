@@ -3,113 +3,99 @@
     font-family: "K2D", sans-serif;
     font-family: "Lexend Deca", sans-serif;
 **/
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
 }
-
 body {
     background-color: white;
 }
-
 header {
-    background-color: rgb(249, 228, 255);
     position: sticky;
     top: 0;
-    width: 100%;
     z-index: 1;
+    background-color: #f2e5ff;
 }
-
-
-.top-header {
+.container-publicidad{
     display: flex;
-    justify-content: center;
     background-color: #000;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
-
-.top-header img {
-    height: 1.875rem;
-    margin: 0 1.25rem;
+.header {
+    background-color: rgb(249, 228, 255);
 }
 
 .mid-header {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
     justify-content: space-between;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 25px;
+    padding: 0 20px;
 }
-
-.enlace-logo{
-    position: absolute;
-}
-
-.peritech-logo{
-    height: 40px;
-}
-
-.buscador{
-    display: flex;
-    margin-right: .75rem;
-    color: #000;
-}
-
-.buscador input{
-    font-family: "K2D", sans-serif;
-    letter-spacing: 1.8px;
-    border-radius: 5px 0 0 5px;
-    border: none;
-    outline: none;
-}
-
-.buscador button{
-    border-radius: 0 5px 5px 0;
-    background-color: #000000;
-    width: 35px;
-}
-
-.enlace-shopping{
-    position: absolute;
-}
-
-.shopping-cart{
-    height: 35px;
-    width: 35px;
-    margin-left: 10px;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 140px;
-    height: 2.8125rem;
+.top-header {
+    /*display: flex;*/
+    text-align: center;
+    background-color: #000;
     width: 100%;
+    height: 30px;
+    gap: 85px;
 }
-
-nav ul li{
-    display: inline;
+.top-header img{
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    height: 2.1875rem;
 }
-
-nav ul li a{
+.peritech-logo {
+    height: 50px;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.navbar li a {
     color: rgb(0, 0, 0);
     font-family: "K2D", sans-serif;
     text-decoration: none;
     font-size: .9375rem;
     font-weight: bold;
-    margin: 0 20px;
 }
-
-nav ul li a:hover{
+.navbar li a:hover{
     font-weight: 900;
     color: #6B2CB7;
 }
-
+.sector-derecho-mid-header {
+    gap: 20px;
+}
+.sector-derecho-mid-header input[type="text"] {
+    padding: 5px 2px;
+    border-radius: 15px 0 0 15px;
+    border: 1px solid rgba(0, 0, 0, 0.552);
+    font-family: "K2D", sans-serif;
+    color: #221d1d9f;
+    letter-spacing: 1px;
+}
+.sector-derecho-mid-header button{
+    padding: 6px 12px;
+    background-color: #000;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    cursor: pointer;
+}
+.boton-carro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.shopping-cart {
+    height: 25px; 
+}
 .section-1 img {
     width: 100%;
     object-fit: contain;
@@ -128,28 +114,25 @@ nav ul li a:hover{
     width: auto;
     height: 70px;
 }
-
 .section-3 p{
     text-align: center;
     color: #663399;
 }
-
 .texto-eslogan-top{
     font-family: "Lexend Deca", sans-serif;
     text-decoration: none;
     font-size: 1.875rem;
     margin-top: 40px;
 }
-
 .texto-eslogan-bottom{
     font-family: "K2D", sans-serif;
     text-decoration: none;
     font-size: 1.125rem;
     margin-bottom: 40px;
 }
-
 .section-4{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 40px;
 }
@@ -172,12 +155,10 @@ nav ul li a:hover{
     margin-left: 10px;
 }
 
-/*Pagina TIENDA*/
-
+/*Pagina 2 TIENDA*/
 .resaltado {
     font-weight: bold;
 }
-
 .home-titulo p {
     color: rgba(0, 0, 0, 0.70);
     font-family: "K2D", sans-serif;
@@ -187,7 +168,6 @@ nav ul li a:hover{
     line-height: normal;
     letter-spacing: 1.8px;
 }
-
 .home-titulo h2 {
     color: #000;
     text-align: center;
@@ -200,7 +180,6 @@ nav ul li a:hover{
     font-size: 2em;
     text-align: center;
 }
-
 .container-productos p {
     color: rgba(0, 0, 0, 0.70);
     font-family: "K2D", sans-serif;
@@ -210,18 +189,15 @@ nav ul li a:hover{
     line-height: normal;
     letter-spacing: 1.8px;
 }
-
 .home-titulo button {
     border-radius: 45px;
     border: 1px solid #6B2CB7;
     background: #FFF;
 }
-
 .productos{
     display: flex;
     justify-content: center;
 }
-
 .container-productos p {
     margin: 20px 0;
     color: #000;
@@ -232,7 +208,6 @@ nav ul li a:hover{
     line-height: normal;
     letter-spacing: 4.32px;
 }
-
 .producto {
     width: 12.5rem;
     margin: .625rem;
@@ -241,7 +216,6 @@ nav ul li a:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     vertical-align: top;
 }
-
 .producto p {
     color: #000;
     font-family: "Lexend Deca", sans-serif;
@@ -253,7 +227,6 @@ nav ul li a:hover{
     margin: 0;
     padding: 5px 0;
 }
-
 .precio p {
     color: #6B2CB7;
     font-family: "Lexend Deca";
@@ -263,15 +236,12 @@ nav ul li a:hover{
     line-height: normal;
     letter-spacing: 3px;
 }
-
-
 .boton-agregar{
     border-radius: 45px;
     border: 1px solid #6B2CB7;
     background: #FFF;
     text-align: center;
 }
-
 .producto img {
     width: 100%;
     height: auto;
@@ -279,20 +249,16 @@ nav ul li a:hover{
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
-
 .banner img {
     display: flex;
     justify-content: center;
     width: 60rem;
     height: 14rem;
 }
-
 /*Pagina 3*/
-
 .section-oferta {
     font-family: "K2D", sans-serif;
 }
-
 .cuadro-oferta {
     background-color: #6B2CB7;
     color: #fff;
@@ -303,7 +269,6 @@ nav ul li a:hover{
     max-width: 600px;
     position: relative;
 }
-
 .titulo-oferta {
     padding: 0 .3125rem;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -314,7 +279,6 @@ nav ul li a:hover{
     transform: rotate(-15deg);
     letter-spacing: 3.84px;
 }
-
 .cuadro-oferta img{
     width: 12rem;
     height: 12rem;
@@ -324,15 +288,12 @@ nav ul li a:hover{
 .detalles-oferta {
     font-size: 16px;
 }
-
 /*Pagina 4*/
-
 .home-titulo img {
     display: flex;
     width: 100%;
     object-fit: contain;
 }
-
 .home-titulo h2{
     position: absolute;
     top: 35%;
@@ -347,7 +308,6 @@ nav ul li a:hover{
     font-weight: bolder;
     font-size: 2.2rem;
 }
-
 .section-contacto {
     display: flex;
     justify-content: center;
@@ -359,33 +319,26 @@ nav ul li a:hover{
     padding: 10px 30px;
     
 }
-
 .datos {
     width: 50%;
     padding: 20px;
 }
-
 .datos p, .datos ul {
     margin: 0 0 10px 0;
     font-size: 16px;
 }
-
-
 .datos ul li {
     color: black;
     margin-bottom: 5px;
 }
-
 .redes-form img {
     width: 2.8125rem;
     height: 2.1875rem;
 }
-
 .form-contacto {
     width: 50%;
     padding: 1.25rem;
 }
-
 .form-contacto input, textarea{
     margin-bottom: 10px;
     padding: 10px;
@@ -393,7 +346,6 @@ nav ul li a:hover{
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-
 .form-contacto button {
     padding: 10px;
     font-size: 16px;
@@ -403,11 +355,9 @@ nav ul li a:hover{
     border-radius: 5px;
     cursor: pointer;
 }
-
 .form-contacto button:hover {
     background-color: #a280df;
 }
-
 /*Pagina 5*/
 .contenido {
     font-family: "K2D", sans-serif;
@@ -420,116 +370,121 @@ nav ul li a:hover{
     letter-spacing: 3.24px;
     margin-top: 20px;
 }
-
 .contenido div {
     background-color: #D9B1F6;
     padding: 20px;
     border-radius: 10px;
     width: 45%;
 }
-
 .contenido h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
-
 .contenido p {
     font-size: 1em;
     line-height: 1.5;
 }
-
-
 footer {
-    background: rgb(249, 228, 255);
-    color: #000000;
-    padding: 20px 200px 35px 200px;
+    background-color: #f2e5ff;
+    padding: 40px 20px;
+}
+
+footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "K2D", sans-serif;
+}
+footer img {
+    height: 50px; 
+    margin-bottom: 20px;
 }
 
 .contenedor-contacto {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    height: 12.5rem;
+    width: 100%;
+    max-width: 1000px;
 }
-
-.contenedor-contacto p{
-    font-family: "K2D", sans-serif;
-    font-size: 0.9rem;
-    margin: 0.3125rem 0;
-}
-
-.contenedor-contacto ul {
-    font-family: "K2D", sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 0.9rem;
-}
-
-.contact-left{
-    display: inline;
-    padding: 10px 0 0 45px;
-}
-
-.contact-left img{
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
-
 .mail{
     display: flex;
-    align-items: center;
-    padding-bottom: 10px;
+    
 }
-
-.mail span{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: "K2D", sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 1.5px;
-}
-
 .whatsapp{
     display: flex;
-    align-items: center;
-    padding-bottom: 10px;
+}
+.contact-left, .contact-right {
+    flex: 1;
+    margin: 20px 50px;
 }
 
-.whatsapp span{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: "K2D", sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; 
-    letter-spacing: 1.5px;
+.contact-left div, .contact-right p, .contact-right ul {
+    margin-bottom: 15px;
 }
 
-.redes a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+.contact-left img, .contact-right img {
+    height: 20px; /* Ajusta el tamaño de los iconos según sea necesario */
+    margin-right: 10px;
 }
 
-.redes img{
-    width: 45px;
-    height: 40px;
+.redes a {
+    margin-right: 20px;
 }
 
-.contact-right{
-    display: inline;
-    align-items: center;
-    padding: 10px 45px 0 0;
+.redes img {
+    height: 30px; /* Ajusta el tamaño de los iconos de redes sociales según sea necesario */
 }
 
-.contact-right p{
-    color: rgb(0, 0, 0);
-    font-family: "K2D", sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; 
-    letter-spacing: 1.5px;
+/* Media queries para diseño responsivo */
+@media (max-width: 1024px) {
+    .navbar, .buscador {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    /*Pagina INICIO*/
+    .contenedor-contacto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-left, .contact-right {
+        margin: 10px 0;
+    }
+
+    .redes img {
+        height: 25px; /* Ajusta el tamaño de los iconos de redes sociales según sea necesario */
+    }
+
+    /*Pagina TIENDA*/
+
+    /*Pagina DESCUENTOS*/
+
+    /*Pagina CONTACTOS*/
+
+    /*Pagina NOSOTROS*/
+}
+@media (max-width: 480px) {
+    /*Pagina INICIO*/
+    .contact-left div span, .contact-right p, .contact-right ul {
+        font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
+    }
+
+    footer img {
+        height: 40px;
+    }
+
+    .redes img {
+        height: 20px; 
+    }
+
+    /*Pagina TIENDA*/
+
+    /*Pagina DESCUENTOS*/
+
+    /*Pagina CONTACTOS*/
+
+    /*Pagina NOSOTROS*/
 }
