@@ -301,7 +301,6 @@ header {
     display: flex;
     justify-content: start;
 }
-
 /*Pagina 4*/
 .float {
     position: fixed;
@@ -332,35 +331,35 @@ header {
     width: 100%;
     height: auto;
 }
-.section-form {
+.section-form{
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Lexend Deca", sans-serif;
 }
-form {
+form{
     padding: 50px 55px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
-    width: 340px;
+    width: 21.25rem;
 }
-.input-group {
+.input-group{
     display: flex;
     flex-direction: column;
     text-align: left;
 }
-form h2 {
+form h2{
     color: #471B7B;
-    font-size: 35px;
+    font-size: 2.1875rem;
 }
-label {
+label{
     color: #471B7B;
-    font-size: 15px;
+    font-size: .9375rem;
     font-weight: 600;
     margin-bottom: 15px;
 }
-.input-group input, textarea {
+.input-group input, textarea{
     padding: 17px 25px;
     border-radius: 25px;
     margin-bottom: 20px;
@@ -380,12 +379,12 @@ input::placeholder, textarea::placeholder{
 }
 .form-txt a{
     color: #7a3fbd;
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: 600;
     text-decoration: none;
 }
 .btn{
-    font-size: 16px;
+    font-size: 1rem;
     color: #ffffff;
     border: 1;
     border-radius: 25px;
@@ -401,8 +400,6 @@ input::placeholder, textarea::placeholder{
 .section1-nosotros img{
     width: 100%;
     height: auto;
-}
-.section-2-historia-mision{
 }
 .contenido {
     display: flex;
@@ -627,6 +624,9 @@ footer img {
     }
 }
 @media (max-width: 345px) {
+    form {
+        width: 18.75rem;
+    }
     .img-asus img{
         width: 18rem;
     }
