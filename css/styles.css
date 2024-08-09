@@ -27,17 +27,7 @@ header {
 .header {
     background-color: rgb(249, 228, 255);
 }
-
-.mid-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-self: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
 .top-header {
-    /*display: flex;*/
     text-align: center;
     background-color: #000;
     width: 100%;
@@ -45,10 +35,18 @@ header {
     gap: 85px;
 }
 .top-header img{
-    /*display: flex;*/
     justify-content: center;
     align-items: center;
     height: 2.1875rem;
+    padding: 3px;
+}
+.mid-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 .peritech-logo {
     height: 50px;
@@ -70,6 +68,9 @@ header {
     color: #6B2CB7;
 }
 .sector-derecho-mid-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 .sector-derecho-mid-header input[type="text"] {
@@ -96,6 +97,20 @@ header {
 .shopping-cart {
     height: 25px; 
 }
+.shopping-cart:hover {
+    transform: scale(1.05);
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 2.5px;
+}
 .section-1 img {
     width: 100%;
     object-fit: contain;
@@ -108,267 +123,299 @@ header {
     letter-spacing: 2.88px;
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 1.25rem 0;
     background-color: #663399;
-    width: auto;
-    height: 70px;
+    width: 100%;
 }
-.section-3 p{
+.section-3 p {
     text-align: center;
     color: #663399;
 }
-.texto-eslogan-top{
+.texto-eslogan-top {
     font-family: "Lexend Deca", sans-serif;
     text-decoration: none;
     font-size: 1.875rem;
     margin-top: 40px;
 }
-.texto-eslogan-bottom{
+.texto-eslogan-bottom {
     font-family: "K2D", sans-serif;
     text-decoration: none;
     font-size: 1.125rem;
     margin-bottom: 40px;
 }
-.section-4{
+.section-4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 40px;
 }
-
-.banner-mouse img{
-    width: 250px;
-    height: 533px;
+.banner-mouse img {
+    display: flex;
+    width: 15.625rem;
+    height: 33.3125rem;
     margin-right: 10px;
 }
-
-.img-asus img{
-    width: 800px;
+.img-asus img {
+    display: flex;
+    width: 50rem;
     height: auto;
     margin: 0 10px;
 }
-
-.banner-teclado img{
-    width: 250px;
-    height: 533px;
+.banner-teclado img {
+    display: flex;
+    width: 15.625rem;
+    height: 33.3125rem;
     margin-left: 10px;
 }
-
 /*Pagina 2 TIENDA*/
 .resaltado {
     font-weight: bold;
 }
-.home-titulo p {
-    color: rgba(0, 0, 0, 0.70);
-    font-family: "K2D", sans-serif;
-    font-size: .9375rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.8px;
+.titulos-inicio-tienda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    gap: 20px;
 }
-.home-titulo h2 {
-    color: #000;
-    text-align: center;
-    font-family: "K2D", sans-serif;
-    font-size: 3.125rem;
-    font-style: italic;
-    font-weight: 800;
-    line-height: normal;
-    letter-spacing: 6px;
-    font-size: 2em;
-    text-align: center;
+#texto-destacados {
+    font-size: 1.875rem;
+    font-weight: 600;
 }
-.container-productos p {
-    color: rgba(0, 0, 0, 0.70);
-    font-family: "K2D", sans-serif;
-    font-size: .9375rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.8px;
-}
-.home-titulo button {
-    border-radius: 45px;
-    border: 1px solid #6B2CB7;
-    background: #FFF;
-}
-.productos{
+.container-productos{
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
-.container-productos p {
-    margin: 20px 0;
-    color: #000;
-    font-family: "K2D", sans-serif;
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 4.32px;
-}
-.producto {
-    width: 12.5rem;
-    margin: .625rem;
-    padding: 10px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    vertical-align: top;
-}
-.producto p {
-    color: #000;
-    font-family: "Lexend Deca", sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 3px;
-    margin: 0;
-    padding: 5px 0;
-}
-.precio p {
-    color: #6B2CB7;
-    font-family: "Lexend Deca";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 3px;
-}
-.boton-agregar{
-    border-radius: 45px;
-    border: 1px solid #6B2CB7;
-    background: #FFF;
+.product-card {
+    border: 2px solid #B576D8;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    background-color: #FFFFFF;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
-.producto img {
+
+.product-card img {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
 }
-.banner img {
+
+.product-card h3 {
+    font-size: 16px;
+    font-family: "K2D", sans-serif;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 18px;
+    font-family: "Lexend Deca", sans-serif;
+    color: #9C27B0;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid #9C27B0;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    color: #9C27B0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.add-to-cart img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #9C27B0;
+    color: #FFFFFF;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+.section-banner-vertodo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.section-banner-vertodo button {
+    background-color: #6B2CB7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    border-radius: 5px 5px;
+    width: 70px;
+    height: 25px;
+    cursor: pointer;
+}
+.section-banner-vertodo button:hover {
+    background-color: #8155b8;
+    transform: scale(1.05);
+} 
+.section-banner-vertodo img {
     display: flex;
     justify-content: center;
     width: 60rem;
-    height: 14rem;
+    height: auto;
 }
 /*Pagina 3*/
-.section-oferta {
-    font-family: "K2D", sans-serif;
+.section1-descuentos img {
+    width: 100%;
+    height: auto;
 }
-.cuadro-oferta {
-    background-color: #6B2CB7;
-    color: #fff;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 10px;
+.grid-container-descuentos {
+    display: grid;
     width: 80%;
-    max-width: 600px;
-    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: .625rem auto;
 }
-.titulo-oferta {
-    padding: 0 .3125rem;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
-    transform: rotate(-15deg);
-    letter-spacing: 3.84px;
+.descuento-item1, .descuento-item3{
+    display: flex;
+    justify-content: end;
 }
-.cuadro-oferta img{
-    width: 12rem;
-    height: 12rem;
-    padding-left: 60%;
+.descuento-item2, .descuento-item4{
+    display: flex;
+    justify-content: start;
 }
 
-.detalles-oferta {
-    font-size: 16px;
-}
 /*Pagina 4*/
-.home-titulo img {
-    display: flex;
-    width: 100%;
-    object-fit: contain;
-}
-.home-titulo h2{
-    position: absolute;
-    top: 35%;
-    left: 35%;
-    color: white;
-    background-color: #663399ce;
-    width: 450px;
+.float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    color: #FFF;
+    border-radius: 50px;
     text-align: center;
-    padding: 20px 0;
-    border-radius: 15px;
-    font-family: "K2D", sans-serif;
-    font-weight: bolder;
-    font-size: 2.2rem;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    overflow: hidden;
 }
-.section-contacto {
+.my-float {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+}
+.section1-contact img {
+    width: 100%;
+    height: auto;
+}
+.section-form {
     display: flex;
+    align-items: center;
     justify-content: center;
-    font-family: "K2D", sans-serif;
-    color: #000;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 10px 30px;
-    
+    font-family: "Lexend Deca", sans-serif;
 }
-.datos {
-    width: 50%;
-    padding: 20px;
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
 }
-.datos p, .datos ul {
-    margin: 0 0 10px 0;
-    font-size: 16px;
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
-.datos ul li {
+form h2 {
+    color: #471B7B;
+    font-size: 35px;
+}
+label {
+    color: #471B7B;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.input-group input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #FFF;
+    border: 2px solid #f8ddff;
     color: black;
-    margin-bottom: 5px;
+    outline: none;
 }
-.redes-form img {
-    width: 2.8125rem;
-    height: 2.1875rem;
+input::placeholder, textarea::placeholder{
+    color: #6a6a6a;
 }
-.form-contacto {
-    width: 50%;
-    padding: 1.25rem;
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
-.form-contacto input, textarea{
-    margin-bottom: 10px;
-    padding: 10px;
+.form-txt a{
+    color: #7a3fbd;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn{
     font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-.form-contacto button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #7652c4;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+    color: #ffffff;
+    border: 1;
+    border-radius: 25px;
+    background-color: #a53ad2;
+    box-shadow: 0 0 20px rgba(135, 0, 254, 0.237);
     cursor: pointer;
 }
-.form-contacto button:hover {
-    background-color: #a280df;
+.btn:hover {
+    background-color: #aa54cf;
 }
 /*Pagina 5*/
+
+.section1-nosotros img{
+    width: 100%;
+    height: auto;
+}
+.section-2-historia-mision{
+}
 .contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "K2D", sans-serif;
     color: #000;
-    font-family: K2D;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     letter-spacing: 3.24px;
-    margin-top: 20px;
+    margin: 40px 0;
 }
 .contenido div {
     background-color: #D9B1F6;
@@ -388,7 +435,6 @@ footer {
     background-color: #f2e5ff;
     padding: 40px 20px;
 }
-
 footer section {
     display: flex;
     justify-content: center;
@@ -399,7 +445,6 @@ footer img {
     height: 50px; 
     margin-bottom: 20px;
 }
-
 .contenedor-contacto {
     display: flex;
     flex-direction: row;
@@ -418,73 +463,176 @@ footer img {
     flex: 1;
     margin: 20px 50px;
 }
-
 .contact-left div, .contact-right p, .contact-right ul {
     margin-bottom: 15px;
 }
-
+.contact-right ul{
+    list-style-type: none;
+}
 .contact-left img, .contact-right img {
-    height: 20px; /* Ajusta el tamaño de los iconos según sea necesario */
+    height: 20px; 
     margin-right: 10px;
 }
-
 .redes a {
     margin-right: 20px;
 }
-
 .redes img {
-    height: 30px; /* Ajusta el tamaño de los iconos de redes sociales según sea necesario */
+    height: 2.5rem; 
 }
-
-/* Media queries para diseño responsivo */
-@media (max-width: 1024px) {
-    .navbar, .buscador {
-        display: none;
+.redes img:hover {
+    transform: scale(1.05);
+}
+/* Media queries*/
+@media (max-width: 1340px){
+    .banner-teclado img {
+        width: 11.625rem;
+        height: 25rem;
+        margin-left: 10px;
+    }
+    .banner-mouse img {
+        width: 11.625rem;
+        height: 25rem;
+        margin-right: 10px;
+    }
+    .img-asus img {
+        width: 37.5rem;
+        height: auto;
+        margin: 0 10px;
     }
 }
-@media (max-width: 768px) {
-    /*Pagina INICIO*/
+@media (max-width: 1024px) {
+    /*Inicio*/
+    .navbar, .boton-carro input{
+        display: none;
+    }
+    .sector-derecho-mid-header button{
+        border-radius: 15px 15px;
+        border: none;
+        cursor: pointer;
+    }
+    .hamburger{
+        display: flex;
+    }
+    /*Tienda*/
+    .section-banner-vertodo img {
+        width: 45rem;
+    }
+    footer{
+        padding: 20px 0 0 0;
+    }
+    footer section{
+        flex-direction: column-reverse;
+    }
+    .contact-left img, .contact-right img {
+        margin-right: 10px;
+        margin-left: 30px;
+    }
+    .redes img {
+        height: 40px;
+    }
+}
+@media (max-width: 1012px){
+    .banner-teclado img {
+        width: 10.625rem;
+        height: 20rem;
+        margin-left: 10px;
+    }
+    .img-asus img {
+        width: 29.9rem;
+        height: auto;
+        margin: 0 10px;
+    }
+    .banner-mouse img {
+        width: 10.625rem;
+        height: 20rem;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 858px){
+    .banner-teclado img {
+        display: none;
+    }
+    .banner-mouse img{
+        display: none;
+    }
+    .img-asus img{
+        width: 33rem;
+    }
+}
+@media (max-width: 768px){
+    .catalogo{
+        font-size: 1rem;
+    }
     .contenedor-contacto {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
     .contact-left, .contact-right {
         margin: 10px 0;
     }
-
-    .redes img {
-        height: 25px; /* Ajusta el tamaño de los iconos de redes sociales según sea necesario */
+    .contact-left div, .contact-right p, .contact-right ul {
+        margin: 0
     }
-
-    /*Pagina TIENDA*/
-
-    /*Pagina DESCUENTOS*/
-
-    /*Pagina CONTACTOS*/
-
-    /*Pagina NOSOTROS*/
+    .redes img {
+        height: 25px; 
+    }
+    .section-banner-vertodo img {
+        width: 40rem;
+    }
+    footer{
+        padding: 0;
+    }
+    .redes img {
+        height: 40px;
+    }
+}
+@media (max-width: 640px){
+    .section-banner-vertodo img {
+        width: 30rem;
+    }
+}
+@media (max-width: 600px){
+    .peritech-logo {
+        height: 35px;
+    }
+    .img-asus img{
+        width: 25rem;
+    }
+    .texto-eslogan-top {
+        font-size: 1.25rem;
+    }
+    .texto-eslogan-bottom {
+        font-size: .8125rem;
+    }
 }
 @media (max-width: 480px) {
-    /*Pagina INICIO*/
-    .contact-left div span, .contact-right p, .contact-right ul {
-        font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
+    .section-banner-vertodo img {
+        width: 20rem;
     }
-
+    .catalogo p{
+        font-size: 1rem;
+    }
+    .img-asus img{
+        width: 20rem;
+    }
+    .contact-left div span, .contact-right p, .contact-right ul {
+        font-size: 14px; 
+    }
     footer img {
         height: 40px;
     }
-
     .redes img {
-        height: 20px; 
+        height: 30px;
     }
+}
+@media (max-width: 345px) {
+    .img-asus img{
+        width: 18rem;
+    }
+}
 
-    /*Pagina TIENDA*/
-
-    /*Pagina DESCUENTOS*/
-
-    /*Pagina CONTACTOS*/
-
-    /*Pagina NOSOTROS*/
+/*Bootstrap*/
+.bg-peritech{
+    background-color: #663399;
 }

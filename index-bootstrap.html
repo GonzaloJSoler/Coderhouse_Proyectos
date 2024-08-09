@@ -4,53 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PeriTech</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/logo-flaticon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <section>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">PeriTech</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/pagina5Nosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./pages/pagina2Tienda.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Tienda
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Mouses</a></li>
-                          <li><a class="dropdown-item" href="#">Teclados</a></li>
-                          <li><a class="dropdown-item" href="#">Monitores</a></li>
-                          <li><a class="dropdown-item" href="#">Streaming</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+  <header>
+    <nav class="navbar sticky-top4 navbar-expand-lg navbar-light bg-light">
+      <img src="./assets/logo-peritech.png" alt="logo-peritech">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="./index.html" target="_blank">Pagina Oficial</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./pages/pagina2Tienda.html" target="_blank">Tienda</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./pages/pagina3Descuentos.html" target="_blank">Descuentos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./pages/pagina4Contactos.html" target="_blank">Contacto</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./pages/pagina5Nosotros.html" target="_blank">Nosotros</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="jumbotron jumbotron-fluid text-center bg-peritech text-white">
+      <div class="container">
+          <h1 class="display-4">Bienvenidos a PeriTech</h1>
+          <p class="lead">La mejor gama de periféricos la encontrás aca!</p>
+      </div>
+  </div>
+  <div class="container mt-5">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                  <img src="./assets/teclado-gamer-razer-blackwidow-v4-pro-yellow-switch-english-rz0304681900r3u1-0.jpg" class="card-img-top" alt="Teclado">
+                  <div class="card-body">
+                      <h5 class="card-title">Teclado Razer Blackwidow</h5>
+                      <p class="card-text">$904.999,78</p>
+                      <a href="#" class="btn btn-primary">Agregar</a>
                   </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                  <img src="./assets/teclado-corsair.png" class="card-img-top" alt="Teclado">
+                  <div class="card-body">
+                      <h5 class="card-title">Teclado Corsair RGB PRO Gaming</h5>
+                      <p class="card-text">$2.019.999,72</p>
+                      <a href="#" class="btn btn-primary">Agregar</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                  <img src="./assets/monitor-gamer-24-asus-vg248qg-fhd-165hz-hdmi-dp-dvi-05-ms-q-144hz-0.jpg" class="card-img-top" alt="Monitor">
+                  <div class="card-body">
+                      <h5 class="card-title">Monitor Gamer ASUS VG248QG</h5>
+                      <p class="card-text">$305.691,75</p>
+                      <a href="#" class="btn btn-primary">Agregar</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                  <img src="./assets/auricular-wireless-cmic-hyperx-cloud-stinger-2-676a2aa-0.jpg" class="card-img-top" alt="Auriculares">
+                  <div class="card-body">
+                      <h5 class="card-title">Auricular Wireless HyperX</h5>
+                      <p class="card-text">$109.499,55</p>
+                      <a href="#" class="btn btn-primary">Agregar</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="./assets/webcam-razer-kiyo-pro-usb-0.jpg" class="card-img-top" alt="Webcam">
+                <div class="card-body">
+                    <h5 class="card-title">Webcam Razer Kiyo Pro USB</h5>
+                    <p class="card-text">$904.999,78</p>
+                    <a href="#" class="btn btn-primary">Agregar</a>
                 </div>
-              </nav>
-        </section>
-
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="./assets/monitor-22-samsung-s33a-fhd-hdmi-vga-0.jpg" class="card-img-top" alt="Monitor">
+                <div class="card-body">
+                    <h5 class="card-title">Monitor Samsung 22" s33a FHD HDMI</h5>
+                    <p class="card-text">$904.999,78</p>
+                    <a href="#" class="btn btn-primary">Agregar</a>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <footer class="footer mt-5 bg-primary text-white">
+      <div class="container">
+          <p>Correo Electrónico: contacto@peritech.com</p>
+          <p>Whatsapp: (+54 351 815 330)</p>
+          <p>Dirección: Avenida Saavedra 520, Cordoba Argentina</p>
+          <p>Horarios de Atención: Lunes a Viernes: 9:00 AM - 6:00 PM, Sábado: 10:00 AM - 4:00 PM, Domingo: Cerrado</p>
+          <p>&copy; 2024 PeriTech. Todos los derechos reservados.</p>
+      </div>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>

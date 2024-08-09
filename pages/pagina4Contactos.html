@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <section>
+        <section class="container-publicidad">
             <div class="top-header">
                 <img src="../assets/nav_intel.png" alt="Intel">
                 <img src="../assets/nav_corsair.png" alt="Corsair">
@@ -18,61 +18,66 @@
                 <img src="../assets/nav_logitech.png" alt="Logitech">
                 <img src="../assets/nav_geforce.png" alt="GeForce">
             </div>
+        </section>
+        <section class="container-mid">
             <div class="mid-header">
-                <a href="./index.html" class="enlace-logo"></a>
-                    <img src="../assets/logo-peritech.png" alt="Logo-Peritech" class="peritech-logo">
+                <img src="../assets/logo-peritech.png" alt="Logo-Peritech" class="peritech-logo">
                 <nav>
-                    <ul>
+                    <ul class="navbar">
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="./pagina2Tienda.html">Tienda</a></li>
                         <li><a href="./pagina3Descuentos.html">Descuentos</a></li>
                         <li><a href="./pagina4Contactos.html">Contactos</a></li>
                         <li><a href="./pagina5Nosotros.html">Nosotros</a></li>
+                        <li><a href="../index-bootstrap.html">Bootstrap</a></li>
                     </ul>
                 </nav>
-                <div class="buscador">
-                    <input type="text" placeholder="Buscar...">
-                    <button type="button"><img src="../assets/lupa.png" alt="Lupa"></button>
-                    <div>
+                <div class="sector-derecho-mid-header">
+                    <div class="boton-carro">
+                        <input type="text" placeholder="Buscar...">
+                        <button type="button"><img src="../assets/lupa.png" alt="Lupa"></button>
                         <a href="#" class="enlace-carro">
                             <img src="../assets/carrito-de-compras.png" alt="Shopping-cart" class="shopping-cart">
                         </a>
                     </div>
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
                 </div>
-                
             </div>
-            
         </section>
     </header>
     <main>
-        <section class="home-titulo">
-            <img src="../assets/fondo-contacto.png" alt="fondo-pc">
-            <h2>CONTÁCTANOS</h2>
+        <a href="#" class="float">
+            <img src="../assets/whatsapp-logo.png" alt="logo-whatsapp">
+            <i class="my-float"></i>
+        </a>
+        <section class="section1-contact">
+            <img src="../assets/contacto-banner.jpg" alt="banner-contacto">
         </section>
         <section>
-            <div class="section-contacto">
-                <div class="form-contacto">
-                    <form action="#">
-                        <input type="text" placeholder="Nombre..." required>
-                        <input type="email" placeholder="Correo Electrónico..." required>
-                        <input type="text" placeholder="Asunto..." required>
-                        <textarea type="text" placeholder="Mensaje..." required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div class="datos">
-                    <p class="resaltado">Dirección</p>
-                    <p>Calle Avenida Saavedra 3040, Córdoba Argentina</p>
-                    <p class="resaltado">Mas información</p>
-                    <a href="https://mail.google.com/" target="_blank">contacto@peritech.com</a>
-                    <p>(+54 351 815 330)</p>
-                    <p>Nuestras redes:</p>
-                    <div class="redes-form">
-                        <a href="https://www.instagram.com"><img src="../assets/Instagram-logo-sign-colored-1pcoot 1.png" alt="Instagram"></a>
-                        <a href="https://www.facebook.com"><img src="../assets/Facebook_logo_(square).png 1.png" alt="Facebook"></a>
+            <div class="section-form">
+                <form action="https://formsubmit.co/contactoperitech@gmail.com" method="POST">
+                    <h2>Contacto</h2>
+                    <div class="input-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" placeholder="Nombre">
+                        <label for="phone">Telefono</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Telefono">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                        <div class="form-txt">
+                            <a href="#">Politica de privacidad</a>
+                            <a href="#">Terminos y condiciones</a>
+                        </div>
+                        <input class="btn" type="submit" value="Enviar">
                     </div>
-                </div>
-            
+                </form>
+            </div>
         </section>
     </main>
     <footer>
