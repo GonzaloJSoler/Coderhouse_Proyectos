@@ -449,12 +449,9 @@ footer img {
     width: 100%;
     max-width: 1000px;
 }
-.mail{
+.mail, .whatsapp{
     display: flex;
     
-}
-.whatsapp{
-    display: flex;
 }
 .contact-left, .contact-right {
     flex: 1;
@@ -471,9 +468,12 @@ footer img {
     margin-right: 10px;
 }
 .redes a {
+    display: inline-block;
     margin-right: 20px;
 }
 .redes img {
+    display: block;
+    line-height: 0;
     height: 2.5rem; 
 }
 .redes img:hover {
