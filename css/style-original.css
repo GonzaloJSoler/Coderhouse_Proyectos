@@ -24,9 +24,6 @@ header {
     align-items: center;
     gap: 30px;
 }
-.header {
-    background-color: rgb(249, 228, 255);
-}
 .top-header {
     text-align: center;
     background-color: #000;
@@ -115,7 +112,7 @@ header {
     width: 100%;
     object-fit: contain;
 }
-.catalogo {
+.section-2 p{
     display: flex;
     justify-content: center;
     font-family: "K2D", sans-serif;
@@ -222,7 +219,6 @@ header {
     color: #9C27B0;
     margin: 10px 0;
 }
-
 .add-to-cart {
     display: inline-flex;
     align-items: center;
@@ -237,18 +233,15 @@ header {
     text-decoration: none;
     font-size: 14px;
 }
-
 .add-to-cart img {
     width: 16px;
     height: 16px;
     margin-right: 5px;
 }
-
 .add-to-cart:hover {
     background-color: #9C27B0;
     color: #FFFFFF;
 }
-
 .product-card:hover {
     transform: scale(1.05);
 }
@@ -401,32 +394,33 @@ input::placeholder, textarea::placeholder{
     width: 100%;
     height: auto;
 }
-.contenido {
+.contenido{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px;
+    margin: 50px;
+}
+.contenido img{
+    width: 300px;
+    height: auto;
+}
+.texto-nosotros{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+}
+
+.texto-nosotros h2{
+    display: flex;
+    justify-content: center;
     font-family: "K2D", sans-serif;
-    color: #000;
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: 3.24px;
-    margin: 40px 0;
+    font-size: 1.875rem;
 }
-.contenido div {
-    background-color: #D9B1F6;
-    padding: 20px;
-    border-radius: 10px;
-    width: 45%;
-}
-.contenido h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-.contenido p {
-    font-size: 1em;
-    line-height: 1.5;
+.texto-nosotros p{
+    font-family: "K2D", sans-serif;
+    font-size: 1.25rem;
 }
 footer {
     background-color: #f2e5ff;
