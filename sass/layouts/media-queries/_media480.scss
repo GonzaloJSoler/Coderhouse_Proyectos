@@ -1,0 +1,23 @@
+@media (max-width: 480px) {
+    .section-2 p{
+        font-size: .875rem;
+    }
+    .section-banner-vertodo img {
+        @include sizes(20rem, auto);
+    }
+    .catalogo p{
+        font-size: 1rem;
+    }
+    .img-asus img{
+        @include sizes(20rem, auto);
+    }
+    .contact-left div span, .contact-right p, .contact-right ul {
+        font-size: 14px; 
+    }
+    footer img {
+        @include sizes(auto, 40px);
+    }
+    .redes img {
+        @include sizes(auto, 30px);
+    }
+}

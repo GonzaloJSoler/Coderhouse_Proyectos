@@ -1,0 +1,17 @@
+@media (max-width: 600px){
+    .section-2 p{
+        font-size: 1rem;
+    }
+    .peritech-logo {
+        @include sizes(auto, 35px);
+    }
+    .img-asus img{
+        @include sizes(25rem, auto);
+    }
+    .texto-eslogan-top {
+        font-size: 1.25rem;
+    }
+    .texto-eslogan-bottom {
+        font-size: .8125rem;
+    }
+}

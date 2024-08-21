@@ -1,0 +1,55 @@
+/*Pagina 1 INICIO*/
+.section-1 img {
+    @include sizes(100%, auto);
+    object-fit: contain;
+}
+.section-2 p {
+    display: flex;
+    justify-content: center;
+    font-family: "K2D", sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2.88px;
+    color: $color-blanco;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 1.25rem 0;
+    background-color: $color-violeta;
+    width: 100%;
+}
+.section-3 p {
+    text-align: center;
+    color: $color-violeta;
+}
+.texto-eslogan-top {
+    font-family: "Lexend Deca", sans-serif;
+    text-decoration: none;
+    font-size: 1.875rem;
+    margin-top: 40px;
+}
+.texto-eslogan-bottom {
+    font-family: "K2D", sans-serif;
+    text-decoration: none;
+    font-size: 1.125rem;
+    margin-bottom: 40px;
+}
+.section-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.banner-mouse img {
+    display: flex;
+    @include sizes(15.625rem, 33.3125rem);
+    margin-right: 10px;
+}
+.img-asus img {
+    display: flex;
+    @include sizes(50rem, auto);
+    margin: 0 10px;
+} 
+.banner-teclado img {
+    display: flex;
+    @include sizes(15.625rem, 33.3125rem);
+    margin-left: 10px;
+}

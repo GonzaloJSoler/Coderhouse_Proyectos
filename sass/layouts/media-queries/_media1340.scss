@@ -1,0 +1,14 @@
+@media (max-width: 1340px){
+    .banner-teclado img {
+        @include sizes(11.625rem, 25rem);
+        margin-left: 10px;
+    }
+    .banner-mouse img {
+        @include sizes(11.625rem, 25rem);
+        margin-right: 10px;
+    }
+    .img-asus img {
+        @include sizes(37.5rem, auto);
+        margin: 0 10px;
+    }
+}

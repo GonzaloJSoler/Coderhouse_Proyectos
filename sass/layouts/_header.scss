@@ -1,0 +1,96 @@
+/*Header*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $background-header-footer;
+}
+.container-publicidad {
+    display: flex;
+    background-color: $color-negro;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.top-header {
+    text-align: center;
+    background-color: $color-negro;
+    @include sizes(100%, 30px);
+    gap: 85px;
+    img {
+        justify-content: center;
+        align-items: center;
+        height: 2.1875rem;
+        padding: 3px;
+    }
+}
+.mid-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.peritech-logo {
+    @include sizes(auto, 50px);
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    li a {
+        color: rgb(0, 0, 0);
+        font-family: "K2D", sans-serif;
+        text-decoration: none;
+        font-size: .9375rem;
+        font-weight: bold;
+        &:hover {
+            font-weight: 900;
+            color: #6B2CB7;
+        }
+    }
+}
+.sector-derecho-mid-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    input[type="text"] {
+        padding: 5px 2px;
+        border-radius: 15px 0 0 15px;
+        border: 1px solid rgba(0, 0, 0, 0.552);
+        font-family: "K2D", sans-serif;
+        color: $color-negro;
+        letter-spacing: 1px;
+    }
+    button {
+        padding: 6px 12px;
+        background-color: $color-negro;
+        border-radius: 0 15px 15px 0;
+        border: none;
+        cursor: pointer;
+    }
+}
+.boton-carro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.shopping-cart {
+    @include sizes(auto, 25px);
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    .line {
+        @include sizes(25px, 3px);
+        background-color: $color-negro;
+        margin: 2.5px;
+    }
+}

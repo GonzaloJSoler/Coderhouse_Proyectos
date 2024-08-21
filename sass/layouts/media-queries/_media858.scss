@@ -1,0 +1,11 @@
+@media (max-width: 858px){
+    .banner-teclado img {
+        display: none;
+    }
+    .banner-mouse img{
+        display: none;
+    }
+    .img-asus img{
+        @include sizes(33rem, auto);
+    }
+}

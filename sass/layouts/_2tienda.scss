@@ -1,0 +1,98 @@
+/*Pagina 2 TIENDA*/
+.resaltado {
+    font-weight: bold;
+}
+.titulos-inicio-tienda {
+    @include flex-column-center;
+    align-items: center;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    gap: 20px;
+}
+#texto-destacados {
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+.container-productos {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.product-card {
+    border: 2px solid $color-violeta;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    background-color: $color-blanco;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    img {
+        @include sizes(100%, auto);
+    }
+    h3 {
+        font-size: 16px;
+        font-family: "K2D", sans-serif;
+        color: $color-negro;
+        margin: 10px 0;
+    }
+}
+.price {
+    font-size: 18px;
+    font-family: "Lexend Deca", sans-serif;
+    color: $color-violeta;
+    margin: 10px 0;
+}
+.add-to-cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid $color-violeta;
+    border-radius: 20px;
+    background-color: $color-blanco;
+    color: $color-violeta;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    font-size: 14px;
+    img {
+        @include sizes(16px, 16px);
+        margin-right: 5px;
+    }
+    &:hover {
+        background-color: #9C27B0;
+        color: $color-blanco;
+    }
+}
+.product-card:hover {
+    transform: scale(1.05);
+}
+.section-banner-vertodo {
+    @include flex-column-center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    button {
+        background-color: $color-violeta;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        color: $color-blanco;
+        border: none;
+        border-radius: 5px 5px;
+        @include sizes(70px, 25px);
+        cursor: pointer;
+        &:hover {
+        background-color: #8155b8;
+        transform: scale(1.05);
+        }
+    }
+    img {
+        display: flex;
+        justify-content: center;
+        @include sizes(60rem, auto);
+    }
+}

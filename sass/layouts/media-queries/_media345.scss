@@ -1,0 +1,8 @@
+@media (max-width: 345px) {
+    form {
+        @include sizes(18.75rem, auto);
+    }
+    .img-asus img{
+        @include sizes(18rem, auto);
+    }
+}

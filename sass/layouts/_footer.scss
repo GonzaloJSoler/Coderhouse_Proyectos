@@ -1,0 +1,61 @@
+/*Footer*/
+footer {
+    background-color: $background-header-footer;
+    padding: 40px 20px;
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "K2D", sans-serif;
+    }
+    img {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+.contenedor-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+}
+.mail, .whatsapp {
+    display: flex;
+}
+.contact-left, .contact-right {
+    flex: 1;
+    margin: 20px 50px;
+}
+
+.contact-left div {
+    margin-bottom: 15px;
+}
+.contact-right {
+    p {
+        margin-bottom: 15px;
+    }
+    ul {
+        margin-bottom: 15px;
+        list-style-type: none;
+    }
+}
+.contact-left img, .contact-right img {
+    height: 20px;
+    margin-right: 10px;
+}
+.redes {
+    a {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    img {
+        display: block;
+        line-height: 0;
+        height: 2.5rem;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

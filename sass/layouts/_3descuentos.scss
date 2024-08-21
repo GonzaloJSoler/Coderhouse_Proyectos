@@ -1,0 +1,19 @@
+/*Pagina 3 DESCUENTOS*/
+.section1-descuentos img {
+    @include sizes(100%, auto);
+}
+.grid-container-descuentos {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: .625rem auto;
+}
+.descuento-item1, .descuento-item3 {
+    display: flex;
+    justify-content: end;
+}
+.descuento-item2, .descuento-item4 {
+    display: flex;
+    justify-content: start;
+}

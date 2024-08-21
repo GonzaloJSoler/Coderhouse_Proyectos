@@ -1,0 +1,43 @@
+@media (max-width: 1024px) {
+    /*Inicio*/
+    .navbar, .boton-carro input{
+        display: none;
+    }
+    .sector-derecho-mid-header button{
+        border-radius: 15px 15px;
+        border: none;
+        cursor: pointer;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .banner-teclado img {
+        @include sizes(10.625rem, 20rem);
+        margin-left: 10px;
+    }
+    .img-asus img {
+        @include sizes(29.9rem, auto);
+        margin: 0 10px;
+    }
+    .banner-mouse img {
+        @include sizes(10.625rem, 20rem);
+        margin-right: 10px;
+    }
+    /*Tienda*/
+    .section-banner-vertodo img {
+        @include sizes(45rem, auto);
+    }
+    footer{
+        padding: 20px 0 0 0;
+    }
+    footer section{
+        flex-direction: column-reverse;
+    }
+    .contact-left img, .contact-right img {
+        margin-right: 10px;
+        margin-left: 30px;
+    }
+    .redes img {
+        @include sizes(auto, 40px);
+    }
+}
