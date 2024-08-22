@@ -1,7 +1,9 @@
-@mixin flex-column-center{
+@mixin flex($direction, $justify, $wrap, $align){
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: $direction;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    align-items: $align;
 }
 @mixin sizes($width, $height)
 {

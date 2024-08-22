@@ -14,4 +14,21 @@
     .texto-eslogan-bottom {
         font-size: .8125rem;
     }
+    main{
+        .contenido{
+            flex-wrap: wrap;
+            justify-content: center;
+            img{
+                @include sizes(150px, auto);
+            }
+            .texto-nosotros{
+                h2{
+                    font-size: 1.5625rem;
+                }
+                p{
+                    font-size: .9375rem; 
+                }
+            }
+        }
+    }
 }

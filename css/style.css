@@ -1,4 +1,5 @@
 /*-----STYLES-----*/
+/*UTILITIES*/
 /*BASE*/
 @import url("https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lexend+Deca:wght@100..900&display=swap");
 * {
@@ -13,7 +14,6 @@ body {
     font-family: "K2D", sans-serif;
     font-family: "Lexend Deca", sans-serif;
 **/
-/*UTILITIES*/
 /*LAYOUTS*/
 /*Header*/
 header {
@@ -127,6 +127,17 @@ header {
   background-color: #663399;
   width: 100%; }
 
+.scale-up-bottom {
+  animation: scale-up-bottom 4s; }
+
+@keyframes scale-up-bottom {
+  0% {
+    transform: scale(0.5);
+    transform-origin: center bottom; }
+  100% {
+    transform: scale(1);
+    transform-origin: center bottom; } }
+
 .section-3 p {
   text-align: center;
   color: #663399; }
@@ -148,6 +159,12 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 40px; }
+
+.banner-img-styles, .banner-mouse, .banner-teclado, .img-asus {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 1.5s ease-in-out; }
 
 .banner-mouse img {
   display: flex;
@@ -175,6 +192,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: nowrap;
   align-items: center;
   font-family: "Lexend Deca", sans-serif;
   font-size: 20px;
@@ -244,6 +262,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 30px;
   margin-top: 30px;
@@ -399,13 +418,13 @@ main .section-2-historia-mision {
 
 main .contenido {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   gap: 20px; }
   main .contenido img {
-    width: 100%;
-    max-width: 400px;
+    width: 25rem;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease; }
@@ -555,6 +574,9 @@ footer {
 @media (max-width: 768px) {
   .catalogo {
     font-size: 1rem; }
+  main .contenido img {
+    height: auto;
+    width: 250px; }
   .contenedor-contacto {
     flex-direction: column;
     align-items: center;
@@ -592,7 +614,17 @@ footer {
   .texto-eslogan-top {
     font-size: 1.25rem; }
   .texto-eslogan-bottom {
-    font-size: .8125rem; } }
+    font-size: .8125rem; }
+  main .contenido {
+    flex-wrap: wrap;
+    justify-content: center; }
+    main .contenido img {
+      height: auto;
+      width: 150px; }
+    main .contenido .texto-nosotros h2 {
+      font-size: 1.5625rem; }
+    main .contenido .texto-nosotros p {
+      font-size: .9375rem; } }
 
 @media (max-width: 480px) {
   .section-2 p {

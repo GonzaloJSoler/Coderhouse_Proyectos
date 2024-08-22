@@ -2,6 +2,11 @@
     .catalogo{
         font-size: 1rem;
     }
+    main{
+        .contenido img{
+            @include sizes(250px, auto);
+        }
+    }
     .contenedor-contacto {
         flex-direction: column;
         align-items: center;

@@ -16,6 +16,19 @@
     background-color: $color-violeta;
     width: 100%;
 }
+.scale-up-bottom {
+    animation: scale-up-bottom 4s;
+}
+@keyframes scale-up-bottom {
+    0% {
+        transform: scale(0.5);
+        transform-origin: center bottom;
+    }
+    100% {
+        transform: scale(1);
+        transform-origin: center bottom;
+    }
+}
 .section-3 p {
     text-align: center;
     color: $color-violeta;
@@ -37,6 +50,15 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 40px;
+}
+.banner-img-styles {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 1.5s ease-in-out;
+}
+.banner-mouse, .banner-teclado, .img-asus {
+    @extend .banner-img-styles;
 }
 .banner-mouse img {
     display: flex;

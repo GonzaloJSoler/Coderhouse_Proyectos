@@ -1,16 +1,14 @@
 /*Pagina 5 NOSOTROS*/
 main {
-    // Sección de banner
     .section1-nosotros {
         img {
             width: 100%;
             height: auto;
             object-fit: cover;
-            max-height: 500px; // Controlamos la altura máxima del banner
-            filter: brightness(80%); // Efecto de oscurecimiento para mejor contraste del texto
+            max-height: 500px; 
+            filter: brightness(80%); 
         }
     }
-    // Sección de historia y misión
     .section-2-historia-mision {
         display: flex;
         flex-direction: column;
@@ -20,23 +18,20 @@ main {
     }
     .contenido {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         text-align: center;
         gap: 20px;
-        // Imágenes dentro de contenido
         img {
-            width: 100%;
-            max-width: 400px;
+            width: 25rem;
+            height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
-        // Efecto hover sobre imágenes
         img:hover {
             transform: scale(1.05);
         }
-        // Texto en contenido
         .texto-nosotros {
             h2 {
                 font-family: "Lexend Deca", sans-serif;
@@ -44,7 +39,6 @@ main {
                 color: #333;
                 margin-bottom: 10px;
                 position: relative;
-            // Línea decorativa debajo del título
                 &::after {
                     content: "";
                     display: block;

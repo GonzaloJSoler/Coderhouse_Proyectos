@@ -1,12 +1,12 @@
 /*-----STYLES-----*/
 
-/*BASE*/
-@import "./base/reset";
-@import "./base/tipografias";
-
 /*UTILITIES*/
 @import "./utilities/variables";
 @import "./utilities/mixins";
+
+/*BASE*/
+@import "./base/reset";
+@import "./base/tipografias";
 
 /*LAYOUTS*/
 @import "./layouts/header";

@@ -3,8 +3,7 @@
     font-weight: bold;
 }
 .titulos-inicio-tienda {
-    @include flex-column-center;
-    align-items: center;
+    @include flex(column, center, nowrap, center);
     font-family: "Lexend Deca", sans-serif;
     font-size: 20px;
     margin-top: 30px;
@@ -72,8 +71,7 @@
     transform: scale(1.05);
 }
 .section-banner-vertodo {
-    @include flex-column-center;
-    align-items: center;
+    @include flex(column, center, nowrap, center);
     gap: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
