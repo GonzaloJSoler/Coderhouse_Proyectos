@@ -1,4 +1,66 @@
 /*Pagina 5 NOSOTROS*/
-.section1-nosotros img {
-    @include sizes(100%, auto);
+main {
+    // Sección de banner
+    .section1-nosotros {
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            max-height: 500px; // Controlamos la altura máxima del banner
+            filter: brightness(80%); // Efecto de oscurecimiento para mejor contraste del texto
+        }
+    }
+    // Sección de historia y misión
+    .section-2-historia-mision {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
+        background-color: #f7f7f7;
+    }
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        // Imágenes dentro de contenido
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        // Efecto hover sobre imágenes
+        img:hover {
+            transform: scale(1.05);
+        }
+        // Texto en contenido
+        .texto-nosotros {
+            h2 {
+                font-family: "Lexend Deca", sans-serif;
+                font-size: 2rem;
+                color: #333;
+                margin-bottom: 10px;
+                position: relative;
+            // Línea decorativa debajo del título
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 60px;
+                    height: 3px;
+                    background-color: $color-violeta;
+                    margin: 8px auto 0;
+                }
+            }
+            p {
+                font-family: "K2D", sans-serif;
+                font-size: 1.2rem;
+                line-height: 1.8;
+                color: #666;
+                max-width: 600px;
+            }
+        }
+    }
 }

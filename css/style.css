@@ -383,9 +383,53 @@ input::placeholder, textarea::placeholder {
     color: #FFF; }
 
 /*Pagina 5 NOSOTROS*/
-.section1-nosotros img {
+main .section1-nosotros img {
+  width: 100%;
   height: auto;
-  width: 100%; }
+  object-fit: cover;
+  max-height: 500px;
+  filter: brightness(80%); }
+
+main .section-2-historia-mision {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  gap: 40px;
+  background-color: #f7f7f7; }
+
+main .contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px; }
+  main .contenido img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; }
+  main .contenido img:hover {
+    transform: scale(1.05); }
+  main .contenido .texto-nosotros h2 {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative; }
+    main .contenido .texto-nosotros h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: #663399;
+      margin: 8px auto 0; }
+  main .contenido .texto-nosotros p {
+    font-family: "K2D", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+    max-width: 600px; }
 
 /*Footer*/
 footer {
@@ -498,7 +542,15 @@ footer {
     display: none; }
   .img-asus img {
     height: auto;
-    width: 33rem; } }
+    width: 33rem; }
+  form {
+    padding: 50px 30px; }
+  form h2 {
+    font-size: 1.5625rem; }
+  .input-group input {
+    padding: 15px; }
+  .input-group label {
+    font-size: 12px; } }
 
 @media (max-width: 768px) {
   .catalogo {
