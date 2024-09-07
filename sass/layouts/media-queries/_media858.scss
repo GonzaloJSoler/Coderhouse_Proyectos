@@ -20,4 +20,7 @@
     .input-group label{
         font-size: 12px;
     }
+    .grid-container-descuentos img{
+        @include sizes(290px, auto);
+    }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*-----STYLES-----*/
 /*UTILITIES*/
 /*BASE*/
@@ -292,18 +293,14 @@ header {
 
 .grid-container-descuentos {
   display: grid;
-  width: 80%;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  margin: .625rem auto; }
+  gap: 10px;
+  justify-items: center;
+  /* Asegura que las imágenes estén centradas en sus celdas */ }
 
-.descuento-item1, .descuento-item3 {
-  display: flex;
-  justify-content: end; }
-
-.descuento-item2, .descuento-item4 {
-  display: flex;
-  justify-content: start; }
+.grid-container-descuentos img {
+  width: 100%;
+  height: auto; }
 
 /*Pagina 4 CONTACTOS*/
 .float {
@@ -569,7 +566,10 @@ footer {
   .input-group input {
     padding: 15px; }
   .input-group label {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .grid-container-descuentos img {
+    height: auto;
+    width: 290px; } }
 
 @media (max-width: 768px) {
   .catalogo {
@@ -600,7 +600,9 @@ footer {
 @media (max-width: 640px) {
   .section-banner-vertodo img {
     height: auto;
-    width: 30rem; } }
+    width: 30rem; }
+  .grid-container-descuentos {
+    grid-template-columns: 1fr; } }
 
 @media (max-width: 600px) {
   .section-2 p {
@@ -644,7 +646,10 @@ footer {
     width: auto; }
   .redes img {
     height: 30px;
-    width: auto; } }
+    width: auto; }
+  .grid-container-descuentos img {
+    height: auto;
+    width: 190px; } }
 
 @media (max-width: 345px) {
   form {

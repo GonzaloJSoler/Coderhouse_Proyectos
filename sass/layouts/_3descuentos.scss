@@ -4,16 +4,11 @@
 }
 .grid-container-descuentos {
     display: grid;
-    width: 80%;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    margin: .625rem auto;
+    gap: 10px;
+    justify-items: center; /* Asegura que las imágenes estén centradas en sus celdas */
 }
-.descuento-item1, .descuento-item3 {
-    display: flex;
-    justify-content: end;
-}
-.descuento-item2, .descuento-item4 {
-    display: flex;
-    justify-content: start;
+.grid-container-descuentos img {
+    width: 100%; 
+    height: auto; 
 }

@@ -2,4 +2,7 @@
     .section-banner-vertodo img {
         @include sizes(30rem, auto);
     }
+    .grid-container-descuentos {
+        grid-template-columns: 1fr;
+    }
 }
