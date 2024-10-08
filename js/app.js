@@ -37,8 +37,17 @@ function registrarDatos() {
             email = null;
         }
     } while (!email);
+    // Solicitar un mensaje o comentario del usuario
+    let mensaje;
+    do {
+        mensaje = prompt("Ingrese un mensaje o comentario:");
+        if (mensaje === null || mensaje.trim() === "") {
+            alert("Por favor, ingrese un mensaje válido.");
+            mensaje = null;
+        }
+    } while (!mensaje);
     // Mostrar un resumen de los datos ingresados
-    alert("Datos ingresados:\nNombre: ${nombre}\nTeléfono: ${telefono}\nCorreo: ${email}");
+    alert("Datos ingresados:\nNombre: ${nombre}\nTeléfono: ${telefono}\nCorreo: ${email}\nMensaje: ${mensaje}");
 }
 
 registrarDatos();

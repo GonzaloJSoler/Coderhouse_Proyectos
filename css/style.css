@@ -615,6 +615,10 @@ footer {
     width: 290px; } }
 
 @media (max-width: 768px) {
+  .menu {
+    width: 150px; }
+    .menu li a {
+      font-size: .75rem; }
   .catalogo {
     font-size: 1rem; }
   main .contenido img {
