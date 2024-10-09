@@ -28,7 +28,7 @@ function registrarDatos() {
             telefono = null;
         }
     } while (!telefono);
-    // Solicitar el correo electrónico del usuario
+    // Solicitar el correo del usuario
     let email;
     do {
         email = prompt("Ingrese su correo electrónico:");
@@ -37,7 +37,7 @@ function registrarDatos() {
             email = null;
         }
     } while (!email);
-    // Solicitar un mensaje o comentario del usuario
+    // Solicitar un mensaje del usuario
     let mensaje;
     do {
         mensaje = prompt("Ingrese un mensaje o comentario:");
@@ -46,7 +46,6 @@ function registrarDatos() {
             mensaje = null;
         }
     } while (!mensaje);
-    // Mostrar un resumen de los datos ingresados
     alert("Datos ingresados:\nNombre: ${nombre}\nTeléfono: ${telefono}\nCorreo: ${email}\nMensaje: ${mensaje}");
 }
 
