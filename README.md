@@ -1,4 +1,5 @@
 ----Primer pre-entrega JavaScript----
+
 Para esta primer pre-entrega cree desde 0 con JavaScript un simulador de registro de datos. 
 
 --Pasos para utilizarlo--
